@@ -69,4 +69,31 @@ $var_name= "Larry,David,Rober,Ken,Michel,Tom";
 print "$arr_[3]\n"; # this will print Roses
 print "$names[4]\n";# this will print Michael
 
+############################## Arrays to String
+$string1 = join('-', @arr_);
+$string2 = join(',', @names);
+
+print "$string1\n";
+print "$string2\n";
+
+############################## Sorting Arrays
+@foods = qw(pizza steak chicken burgers);
+print "Before: @foods\n";
+
+@foods = sort(@foods);
+print "After: @foods\n";
+
+############################## $[
+#@foods = qw(zero one two three);
+#$[ = 1;
+#print "\@foods[1] = $foods[1]\n";
+#print "\@foods[2] = $foods[2]\n";
+
+################################ SELECTING 
+$var = (5,4,3,2,1)[4];
+print "value of \$var = $var\n";
+
+@list = (5,4,3,2,1)[1..3];
+print "Value of \@list = @list\n";
+
 
